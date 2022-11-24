@@ -74,7 +74,7 @@ router.get("/", auth.optional, function(req, res, next) {
       } else if (req.query.favorited) {
         query._id = { $in: [] };
       }
-      console.table(query);
+
       return Promise.all([
         Item.find(query)
           .limit(Number(limit))
