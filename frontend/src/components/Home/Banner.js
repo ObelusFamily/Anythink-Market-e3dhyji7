@@ -9,6 +9,7 @@ const Banner = () => {
         <div>
           <span>A place to </span>
           <span id="get-part">get</span>
+          <input name="title" placeholder="What is that you truly desire?" className="search-title"></input>
           <span> the cool stuff.</span>
         </div>
       </div>
